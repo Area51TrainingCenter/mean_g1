@@ -27,6 +27,12 @@ Curso de MEAN
 * [Teach a Dog to REST - Video](https://vimeo.com/17785736)
 * [Color names on CSS](http://www.w3schools.com/colors/colors_names.asp)
 
+*How create and design a product*
+* [Design Sprint](https://developers.google.com/design-sprint/)
+* [How to design with Design Sprint](http://revista.uxnights.com/disenando-design-sprint/)
+* [Sprint: How to Solve Big Problems and Test New Ideas in Just Five Days](https://www.amazon.com.mx/Sprint-Solve-Problems-Test-Ideas/dp/150112174X/)
+* [Design Sprint Library](http://www.gv.com/library/)
+
 
 
 ##Todo's
