@@ -1,0 +1,22 @@
+{
+  "name": "curso-mean-yfx",
+  "version": "1.0.0",
+  "description": "Aplicación para aprender MEAN",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Area51TrainingCenter/mean_g1.git"
+  },
+  "author": "@yacaFx",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Area51TrainingCenter/mean_g1/issues"
+  },
+  "homepage": "https://github.com/Area51TrainingCenter/mean_g1#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
