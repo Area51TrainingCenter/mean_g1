@@ -29,7 +29,6 @@ Curso de MEAN
 * [Get a Functional and Sleek Console in Windows](https://scotch.io/tutorials/get-a-functional-and-sleek-console-in-windows)
 
 
-
 ##Todo's
 
 ** Not yet **  
@@ -51,6 +50,13 @@ Curso de MEAN
 * [Robert Nyman Blog](https://robertnyman.com)
 * [Inc](http://www.inc.com)
 * [Open Source](https://opensource.com/frontpage)
+
+*How create and design a product*
+* [Design Sprint](https://developers.google.com/design-sprint/)
+* [How to design with Design Sprint](http://revista.uxnights.com/disenando-design-sprint/)
+* [Sprint: How to Solve Big Problems and Test New Ideas in Just Five Days](https://www.amazon.com.mx/Sprint-Solve-Problems-Test-Ideas/dp/150112174X/)
+* [Design Sprint Library](http://www.gv.com/library/)
+
 
 ## Must to watch ;)
 * [Ejemplo práctico de web app con AngularJS, NodeJS y MongoDB](https://www.video2brain.com/mx/cursos/ejemplo-practico-de-web-app-con-angularjs-nodejs-y-mongodb)
