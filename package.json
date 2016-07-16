@@ -17,6 +17,10 @@
   },
   "homepage": "https://github.com/Area51TrainingCenter/mean_g1#readme",
   "dependencies": {
-    "express": "^4.14.0"
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "mongoose": "^4.5.4",
+    "morgan": "^1.7.0"
   }
 }
