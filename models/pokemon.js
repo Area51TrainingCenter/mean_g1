@@ -16,7 +16,12 @@ var PokemonSchema = new Schema({
     count: {
       type: Number,
       default: 0
+    },
+    owner:{
+      type: Schema.ObjectId,
+      ref: 'User'
     }
+
 });
 
 PokemonSchema.post('findOne', function(pokemon){

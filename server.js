@@ -135,7 +135,7 @@ apiRouter.route('/pokemons')
         var pokemon = new Pokemon();
         pokemon.name = req.body.name;
         pokemon.type = req.body.type;
-
+        pokemon.owner = req.body.owner;
 
 
         pokemon.save(function(err, pokemon) {
@@ -160,11 +160,24 @@ apiRouter.route('/pokemons')
     //Get all pokemons through GET
     //URL: http://localhost:5000/api/pokemons
     .get(function(req, res) {
-        Pokemon.find(function(err, pokemons) {
-            if (err) return res.send(err);
-
-            res.json(pokemons)
+        // Pokemon.find(function(err, pokemons) {
+        //     if (err) return res.send(err);
+        //
+        //     res.json(pokemons)
+        // })
+        Pokemon.find({}, function(err, pokemons) {
+            User.populate(pokemons, {
+                path: 'owner',
+                select: {name: 1, username:1},
+                match: {username: 'Cantinflas'},
+            }, function(err, pokemons) {
+                //res.status(200).send(pokemons);
+                res.status(200).json(pokemons);
+            })
         })
+        //.skip(4).limit(3)
+        //.sort({name: -1})
+        .select({ name: 1, type:1, owner:1})
     })
 
 // Routes /pokemons/:pokemon_id
@@ -174,7 +187,7 @@ apiRouter.route('/pokemons/:pokemon_id')
             if (err) return res.send(err);
             res.json({
                 message: pokemon.sayHi(),
-                count: 'Ha sido consultado '+pokemon.count + ' veces'
+                count: 'Ha sido consultado ' + pokemon.count + ' veces'
             });
         })
     })
@@ -184,6 +197,7 @@ apiRouter.route('/pokemons/:pokemon_id')
 
             if (req.body.name) pokemon.name = req.body.name;
             if (req.body.type) pokemon.type = req.body.type;
+            if (req.body.owner) pokemon.owner = req.body.owner;
 
             pokemon.save(function(err) {
                 if (err) return res.send(err);
@@ -204,6 +218,28 @@ apiRouter.route('/pokemons/:pokemon_id')
             })
         })
     })
+
+apiRouter.route('/pokemons/type/:type')
+    .get(function(req, res) {
+        Pokemon.find({
+          //type: /Electric/i
+          //type: req.params.type
+          //type: new RegExp(req.params.type, 'i'),
+          //name: /chu/i
+          $or: [{type: /Electric/i}, {type: /Psychic/i}],
+          // count: {
+          //   $gt: 0,
+          //   $lt: 10
+          // }
+          count:{
+            $in: [1,0]
+          }
+        }, function(err, pokemons) {
+            res.json( pokemons )
+        })
+    })
+
+
 
 
 //findOne({prop: value}, callback)
