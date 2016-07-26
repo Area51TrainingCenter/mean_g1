@@ -17,10 +17,15 @@
   },
   "homepage": "https://github.com/Area51TrainingCenter/mean_g1#readme",
   "dependencies": {
+    "angular": "^1.5.8",
     "bcrypt-nodejs": "0.0.3",
     "body-parser": "^1.15.2",
     "express": "^4.14.0",
+    "express-session": "^1.14.0",
+    "jsonwebtoken": "^7.1.6",
     "mongoose": "^4.5.4",
-    "morgan": "^1.7.0"
+    "morgan": "^1.7.0",
+    "passport": "^0.3.2",
+    "passport-github": "^1.1.0"
   }
 }
