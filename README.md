@@ -28,6 +28,7 @@ Curso de MEAN
 * [Color names on CSS](http://www.w3schools.com/colors/colors_names.asp)
 * [Get a Functional and Sleek Console in Windows](https://scotch.io/tutorials/get-a-functional-and-sleek-console-in-windows)
 * [Microsoft REST API Guidelines](https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md)
+* [The Philosophy of Distributed Data](http://www.confluent.io/blog/apache-kafka-samza-and-the-unix-philosophy-of-distributed-data)
 
 ##Todo's
 
