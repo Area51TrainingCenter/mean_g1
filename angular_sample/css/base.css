@@ -1,0 +1,18 @@
+.squares{
+  background-color: #ACEACE;
+  border: 1px solid #ccc;
+  font-size: 10px;
+}
+
+.squares div {
+  width: 100px;
+  height: 100px;
+  border: 1px solid salmon;
+  float: left;
+  overflow: scroll;
+}
+
+.theClock{
+  clear: both;
+  padding-top: 100px;
+}
