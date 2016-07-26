@@ -27,7 +27,7 @@ Curso de MEAN
 * [Teach a Dog to REST - Video](https://vimeo.com/17785736)
 * [Color names on CSS](http://www.w3schools.com/colors/colors_names.asp)
 * [Get a Functional and Sleek Console in Windows](https://scotch.io/tutorials/get-a-functional-and-sleek-console-in-windows)
-
+* [Microsoft REST API Guidelines](https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md)
 
 ##Todo's
 
