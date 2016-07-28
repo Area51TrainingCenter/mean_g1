@@ -6,6 +6,8 @@
     <title>Angular 101</title>
     <link rel="stylesheet" href="../angular_sample/css/base.css">
     <script type="text/javascript" src="../node_modules/angular/angular.min.js"></script>
+    <script type="text/javascript" src="../angular_sample/js/services.js"></script>
+    <script type="text/javascript" src="../angular_sample/js/directives.js"></script>
     <script type="text/javascript" src="../angular_sample/js/controller.js"></script>
     <script type="text/javascript" src="../angular_sample/js/app.js"></script>
 </head>
@@ -45,9 +47,45 @@
               'city': 'Chincha'
             }] | filter:{ 'city':'Trujillo' }
           }}
+          <br>
+          {{ ['hola', 'Mundo', 'mundial'] | filter: isCapitalized }}
+          <br>
+          {{
+            {
+              'dish': 'Rocoto Relleno',
+              'city': 'Arequipa'
+            } | json
+          }}
+          <br >
+          {{ ['a', 'b', 'c', 'd', 'e', 'f'] | limitTo:3 }}
+        </div>
+        <div class="orderBy">
+          {{
+            [{
+              'dish': 'Rocoto Relleno',
+              'city': 'Arequipa'
+            },{
+              'dish': 'Adobo',
+              'city': 'Arequipa'
+            },{
+              'dish': 'Quesillo con miel',
+              'city': 'Cajamarca'
+            },{
+              'dish': 'Shambar',
+              'city': 'Trujillo'
+            },{
+              'dish': 'Carapulcra',
+              'city': 'Chincha'
+            }] | orderBy: '-dish'
+          }}
         </div>
 
     </div>
+    <div yfxattr>
+
+    </div>
+
+    <yfxelem></yfxelem>
     <div class="theClock" ng-controller="clockCtrl">
         <h2>Son las {{ clock.now | date: 'medium' }}</h2>
         <h2>Son las {{ clock.now | date: 'short' }}</h2>
@@ -60,6 +98,15 @@
         <h2>Son las {{ clock.now | date: 'MMMM' }}</h2>
         <h2>Son las {{ clock.now | date: 'a' }}</h2>
         <button type="button" ng-click="updateClock()">Cambiar fecha/hora</button>
+    </div>
+
+    <div ng-controller="citiesCtrl">
+        <ul>
+          <li ng-repeat="city in cities">
+            <a ng-click="searchCity(city.abbr)">{{ city.abbr }}</a>
+          </li>
+        </ul>
+        <h1>{{ city.name }}</h1>
     </div>
 
 </body>
