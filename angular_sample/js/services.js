@@ -2,34 +2,44 @@ angular.module('myApp.services', [])
     .service('cityService', function($filter) {
         var cities = [{
             abbr: 'sfo',
-            name: 'San Francisco'
+            name: 'San Francisco',
+            status: false
         }, {
             abbr: 'lim',
-            name: 'Lima'
+            name: 'Lima',
+            status: false
         }, {
             abbr: 'cdmx',
-            name: 'Ciudad de México'
+            name: 'Ciudad de México',
+            status: false
         }, {
             abbr: 'nyc',
-            name: 'New York'
+            name: 'New York',
+            status: false
         }, {
             abbr: 'tyo',
-            name: 'Tokyo'
+            name: 'Tokyo',
+            status: false
         }, {
             abbr: 'grz',
-            name: 'Graz'
+            name: 'Graz',
+            status: false
         }, {
             abbr: 'rom',
-            name: 'Roma'
+            name: 'Roma',
+            status: false
         }, {
             abbr: 'mun',
-            name: 'Munich'
+            name: 'Munich',
+            status: false
         }, {
             abbr: 'sdq',
-            name: 'Santo Domingo'
+            name: 'Santo Domingo',
+            status: false
         }, {
             abbr: 'bog',
-            name: 'Bogota'
+            name: 'Bogota',
+            status: false
         }];
 
         this.getCity = function(abr) {
