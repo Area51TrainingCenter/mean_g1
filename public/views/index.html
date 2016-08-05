@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html ng-app="pokeApp">
+
+<head>
+    <meta charset="utf-8">
+    <title>Pokemon Admin</title>
+
+    <!-- Head -->
+    <link rel="stylesheet" href="bower_components/lumx/dist/lumx.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/velocity/velocity.js"></script>
+    <script src="bower_components/moment/min/moment-with-locales.js"></script>
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+    <script type="text/javascript" src="https://code.angularjs.org/1.5.8/angular-route.min.js"></script>
+
+    <script src="bower_components/lumx/dist/lumx.js"></script>
+
+    <script type="text/javascript" src="js/app.routes.js"></script>
+    <script type="text/javascript" src="js/app.controllers.js"></script>
+    <script type="text/javascript" src="js/app.services.js"></script>
+    <script type="text/javascript" src="js/app.directives.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+</head>
+
+<body>
+    <div class="p+">
+        <div class="card">
+            <div class="card__actions">
+                <lx-button lx-color="orange" lx-type="flat">Usuarios</lx-button>
+                <lx-button lx-color="orange" lx-type="flat">Pokemons</lx-button>
+            </div>
+            <div flex-container="row">
+                <div flex-item flex-container="column">
+                    <div flex-item>
+                        <div class="p+">
+                            <div ng-view></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
