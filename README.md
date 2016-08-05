@@ -29,9 +29,13 @@ Curso de MEAN
 * [Get a Functional and Sleek Console in Windows](https://scotch.io/tutorials/get-a-functional-and-sleek-console-in-windows)
 * [Microsoft REST API Guidelines](https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md)
 * [free ebook essentials ecmascript6 typescript](http://codingthesmartway.com/free-ebook-essentials-ecmascript6-typescript/)
-##Todo's
+* [The Philosophy of Distributed Data](http://www.confluent.io/blog/apache-kafka-samza-and-the-unix-philosophy-of-distributed-data)  
 
-** Not yet **  
+
+
+##Todo's  
+
+**Not yet**  
 
 
 
