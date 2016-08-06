@@ -28,9 +28,9 @@
 <body>
     <div class="p+">
         <div class="card">
-            <div class="card__actions">
-                <lx-button lx-color="orange" lx-type="flat">Usuarios</lx-button>
-                <lx-button lx-color="orange" lx-type="flat">Pokemons</lx-button>
+            <div class="card__actions" ng-controller="mainCtrl as main">
+                <lx-button lx-color="orange" lx-type="flat" ng-click="main.goTo('/users')">Usuarios</lx-button>
+                <lx-button lx-color="orange" lx-type="flat" ng-click="main.goTo('/pokemons')">Pokemons</lx-button>
             </div>
             <div flex-container="row">
                 <div flex-item flex-container="column">
