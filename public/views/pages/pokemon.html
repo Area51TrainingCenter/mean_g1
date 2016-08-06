@@ -1,6 +1,22 @@
-<div>
-  <h1>Pokemon page</h1>
-  <p>
-    {{ pokemon.message }}
-  </p>
+<div flex-item="6">
+    <span class="fs-title display-block mb">Pokemons</span>
+
+    <div class="divider divider--dark"></div>
+
+    <ul class="list mt++">
+        <li class="list-row" ng-repeat="item in pokemon.pokemons">
+            <div class="list-row__primary">
+                <img src="/bd_pokemon/pokemons/{{item.name | lowercase }}.jpg" width="40" height="40" class="img-round">
+            </div>
+
+            <div class="list-row__content">
+                <span class="display-block">{{item.name}}</span>
+                <span class="display-block fs-body-1 tc-black-2">{{item.species}}</span>
+            </div>
+
+            <div class="list-row__secondary">
+                <lx-icon lx-id="information" lx-size="xs" lx-color="grey" lx-type="flat"></lx-icon>
+            </div>
+        </li>
+    </ul>
 </div>
