@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Pikachu",
+    "type": "electric"
+  },
+  {
+    "name": "Charmander",
+    "type": "fire"
+  },
+  {
+    "name": "Squirtle",
+    "type": "water"
+  },
+  {
+    "name": "Pigeot",
+    "type": "air"
+  },
+  {
+    "name": "Bulbasur",
+    "type": "Plant"
+  },
+  {
+    "name": "Mewtwo",
+    "type": "Psychic"
+  }
+]
