@@ -21,3 +21,4 @@ angular.module('pokeApp.services', [])
             _pokemons = undefined;
         }
     })
+    .service('User')
